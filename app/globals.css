@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-black min-h-screen flex flex-col;
+}
+
+main {
+  @apply flex-grow;
+}
+
+footer {
+  @apply bg-gray-100 text-center p-4 border-t border-gray-200;
+}
+
