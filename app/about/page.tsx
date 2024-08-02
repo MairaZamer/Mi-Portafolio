@@ -1,5 +1,3 @@
-
-
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -21,17 +19,17 @@ const About: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <br />
-      <br />
-      <main className="container mx-auto p-4">
-        <div>
-          <h1 className="text-3xl font-bold mb-4">Sobre Mí</h1>
-          <div className="flex flex-col md:flex-row items-center mb-4">
-            <div className="md:flex-1">
-              <p className="text-lg mb-4">
+      <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-200 dark:from-gray-800 dark:to-black">
+        <div className="container mx-auto p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+          <h1 className="text-4xl font-bold text-black dark:text-white mb-4">
+            Sobre Mí
+          </h1>
+          <div className="flex flex-col md:flex-row items-center mb-8">
+            <div className="md:flex-1 text-lg text-gray-700 dark:text-gray-300">
+              <p className="mb-4">
                 Desarrolladora full stack, orientada al Front-End. Diseño UX/UI.
                 <br />
-                Me encanta el mundo de la tecnología y capacitarme constantemente para aprender nuevas teconologías y técnicas de programación.
+                Me encanta el mundo de la tecnología y capacitarme constantemente para aprender nuevas tecnologías y técnicas de programación.
                 <br />
                 Además de mi experiencia en desarrollo web, soy emprendedora y tengo un título en Gestión Industrial.
                 <br />
@@ -41,18 +39,19 @@ const About: React.FC = () => {
             <div className="md:flex-none md:ml-8">
               <img
                 src="/maira.jpeg"
-                className="w-50 h-60 rounded-full"
+                className="w-40 h-40 rounded-full border-4 border-yellow-500"
                 alt="Maira Zamer"
               />
             </div>
           </div>
-          <h2 className="text-2xl font-bold mb-4">Tecnologías</h2>
-          <br />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <h2 className="text-3xl font-bold text-black dark:text-white mb-4">
+            Tecnologías
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {tools.map((tool) => (
               <div key={tool.name} className="flex flex-col items-center">
-                <img src={tool.logo} alt={`${tool.name} logo`} className="w-12 h-12 mb-2" />
-                <span>{tool.name}</span>
+                <img src={tool.logo} alt={`${tool.name} logo`} className="w-16 h-16 mb-2" />
+                <span className="text-lg text-gray-700 dark:text-gray-300">{tool.name}</span>
               </div>
             ))}
           </div>
