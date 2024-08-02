@@ -39,7 +39,7 @@ const About: React.FC = () => {
             <div className="md:flex-none md:ml-8">
               <img
                 src="/maira.jpeg"
-                className="w-40 h-40 rounded-full border-4 border-yellow-500"
+                className="w-40 h-55 rounded-full border-4 border-yellow-500"
                 alt="Maira Zamer"
               />
             </div>
