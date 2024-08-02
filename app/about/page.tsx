@@ -1,4 +1,4 @@
-// app/about/page.tsx
+
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -31,7 +31,7 @@ const About: React.FC = () => {
               <p className="text-lg mb-4">
                 Desarrolladora full stack, orientada al Front-End. Diseño UX/UI.
                 <br />
-                Me encanta el mundo de la tecnología y capacitarme contantemente para aprender nuevas teconologías y técnicas de programación.
+                Me encanta el mundo de la tecnología y capacitarme constantemente para aprender nuevas teconologías y técnicas de programación.
                 <br />
                 Además de mi experiencia en desarrollo web, soy emprendedora y tengo un título en Gestión Industrial.
                 <br />

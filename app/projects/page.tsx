@@ -1,5 +1,4 @@
-
-
+import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';
@@ -9,7 +8,8 @@ const Projects: React.FC = () => {
     {
       title: 'Pokemon',
       description: 'Proyecto Individual sobre Pokemons',
-      link: '#',
+      repoGit: 'https://github.com/MairaZamer/PIPokemons',
+      image: '/PI/HomePage2.png', 
     },
     {
       title: 'Ebooks Palace',
@@ -19,7 +19,6 @@ const Projects: React.FC = () => {
       frontendRepo: 'https://github.com/MairaZamer/EbooksPalace-Front',
       backendRepo: 'https://github.com/MairaZamer/EbooksPalace-back',
     },
-   
   ];
 
   return (
@@ -29,27 +28,45 @@ const Projects: React.FC = () => {
         <h1 className="text-3xl font-bold mb-4">Proyectos</h1>
         <div className="flex flex-wrap justify-center">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg p-4 m-4 border-purple-dark border-2">
-              <h3 className="text-lg font-bold text-purple-dark">{project.title}</h3>
-              <p className="mt-2 text-black">{project.description}</p>
-              {project.video ? (
-                <>
-                  <iframe 
-                    className="mt-4 w-full h-64" 
-                    src="https://www.youtube.com/embed/ZT9vL3sGkjg"
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen>
-                  </iframe>
-                  <div className="mt-4">
-                    <a href={project.frontendRepo} className="text-purple-dark block" target="_blank" rel="noopener noreferrer">Repositorio Frontend</a>
-                    <a href={project.backendRepo} className="text-purple-dark block" target="_blank" rel="noopener noreferrer">Repositorio Backend</a>
-                  </div>
-                </>
-              ) : (
-                <a href={project.link} className="text-purple-light mt-4 block">Ver Proyecto</a>
-              )}
+            <div 
+              key={index} 
+              className="bg-white shadow-md rounded-lg p-4 m-4 border-purple-dark border-2 flex flex-col justify-between" 
+              style={{ width: '500px', height: '500px' }}
+            >
+              <div>
+                <h3 className="text-lg font-bold text-purple-dark">{project.title}</h3>
+                <p className="mt-2 text-black">{project.description}</p>
+                <br/>
+                {project.image && (
+                  <img 
+                    className="mt-4 w-full h-64 object-cover"
+                    src={project.image} 
+                    alt={`${project.title} screenshot`} 
+                  />
+                )}
+              </div>
+              <div>
+                {project.video ? (
+                  <>
+                    <iframe 
+                      className="mt-4 w-full h-64" 
+                      src="https://www.youtube.com/embed/ZT9vL3sGkjg"
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen>
+                    </iframe>
+                    <br/>
+                    <br/>
+                    <div className="mt-4">
+                      <a href={project.frontendRepo} className="text-purple-dark block" target="_blank" rel="noopener noreferrer">Repositorio Frontend</a>
+                      <a href={project.backendRepo} className="text-purple-dark block" target="_blank" rel="noopener noreferrer">Repositorio Backend</a>
+                    </div>
+                  </>
+                ) : (
+                  <a href={project.repoGit} className="text-purple-dark mt-4 block">Repositorio en Github</a>
+                )}
+              </div>
             </div>
           ))}
         </div>
