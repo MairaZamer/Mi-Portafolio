@@ -14,7 +14,7 @@ const About: React.FC = () => {
     { name: "CSS", logo: "/logos/css.png" },
     { name: "HTML", logo: "/logos/html.png" },
     { name: "Sequelize", logo: "/logos/sequelize.png" },
-    { name: "PostgreSQL", logo: "/logos/postgresql.png" },
+    { name: "PostgreSQL", logo: "/logos/postgres.png" },
     { name: "Figma", logo: "/logos/figma.png" },
   ];
 
