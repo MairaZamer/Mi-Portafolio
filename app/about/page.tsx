@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 
 const About: React.FC = () => {
   const tools = [
@@ -55,6 +56,7 @@ const About: React.FC = () => {
               </div>
             ))}
           </div>
+          <Contact/>
         </div>
       </main>
       <Footer />

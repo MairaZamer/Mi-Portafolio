@@ -1,12 +1,13 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import SocialLinks from '../components/SocialLinks';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import SocialLinks from './SocialLinks';
 
 const Contact: React.FC = () => {
   return (
     <div>
-      <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-200 dark:from-gray-800 dark:to-black">
+      <main >
+        <br/>
+        <br/>
         <div className="container mx-auto p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
           <h1 className="text-4xl font-bold text-black dark:text-white mb-6">
             Contacto
@@ -21,13 +22,13 @@ const Contact: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Enviar WhatsApp
+              WhatsApp
             </a>
             <a
               href="mailto:mairazamer@gmail.com"
               className="inline-block bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-600 transition-colors"
             >
-              Enviar Correo
+              Gmail
             </a>
           </div>
           <div className="mt-6">
@@ -35,7 +36,6 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
