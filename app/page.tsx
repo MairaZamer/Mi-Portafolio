@@ -12,16 +12,15 @@ export default function Home() {
             <h1 className="text-5xl font-bold text-black dark:text-white mb-4">
               Hola, soy
               <br />
-            
-              <span className="text-4xl text-center block mt-2" style={{ color: '#FFC107' }}>
+              <span className="text-4xl text-center block mt-2 zoom-in-effect" style={{ color: '#FFC107' }}>
                 Maira Zamer
               </span>
             </h1>
             <br />
-            <p className="text-2xl text-gray-700 dark:text-gray-300 mb-8">
+            <p className="text-2xl text-gray-700 dark:text-gray-300 mb-8 zoom-in-effect">
               Desarrolladora Full Stack, orientada al Front-End, con conocimientos en diseño UX/UI.
             </p>
-            <div className="mt-4">
+            <div className="mt-4 zoom-in-effect">
               <a
                 href="/cv_maira_zamer.pdf"
                 download
@@ -30,13 +29,13 @@ export default function Home() {
                 Descargar CV
               </a>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 zoom-in-effect">
               <SocialLinks />
             </div>
           </div>
           <img
             src="/programacion.gif"
-            className="w-50 h-50 rounded-full shadow-lg md:ml-8"
+            className="w-50 h-50 rounded-full shadow-lg md:ml-8 zoom-in-effect"
             alt="Maira Zamer"
           />
         </div>

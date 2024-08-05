@@ -1,7 +1,12 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-justify {
+    text-align: justify;
+  }
+}
 
 body {
   @apply bg-white text-black min-h-screen flex flex-col;
@@ -15,3 +20,13 @@ footer {
   @apply bg-gray-100 text-center p-4 border-t border-gray-200;
 }
 
+@layer utilities {
+  @keyframes zoom-in {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+
+  .zoom-in-effect {
+    animation: zoom-in 0.5s forwards;
+  }
+}

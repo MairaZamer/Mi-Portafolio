@@ -26,7 +26,7 @@ const About: React.FC = () => {
             Sobre Mí
           </h1>
           <div className="flex flex-col md:flex-row items-center mb-8">
-            <div className="md:flex-1 text-lg text-gray-700 dark:text-gray-300">
+            <div className="md:flex-1 text-lg text-gray-700 dark:text-gray-300 text-justify">
               <p className="mb-4">
                 Desarrolladora full stack, orientada al Front-End. Diseño UX/UI.
                 <br />
@@ -34,7 +34,7 @@ const About: React.FC = () => {
                 <br />
                 Además de mi experiencia en desarrollo web, soy emprendedora y tengo un título en Gestión Industrial.
                 <br />
-                Estoy siempre en busca de nuevas oportunidades para crecer y colaborar en proyectos desafiantes. Me entusiasma trabajar en equipo y aportar soluciones creativas y de alta calidad.
+                Estoy siempre en busca de nuevas oportunidades para crecer y colaborar en proyectos desafiantes. Me entusiasma trabajar en equipo, aportar soluciones creativas y de calidad.
               </p>
             </div>
             <div className="md:flex-none md:ml-8">
@@ -48,7 +48,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl font-bold text-black dark:text-white mb-4">
             Tecnologías
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {tools.map((tool) => (
               <div key={tool.name} className="flex flex-col items-center">
                 <img src={tool.logo} alt={`${tool.name} logo`} className="w-16 h-16 mb-2" />
