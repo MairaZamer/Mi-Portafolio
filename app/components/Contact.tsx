@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks';
 const Contact: React.FC = () => {
   return (
     <div >
-      <main className="flex-grow flex flex-col items-center text-center p-6  bg-opacity-50 rounded-lg shadow-lg" style={{ fontFamily: "'La Belle Aurore', cursive" }}>
+      <main className="flex-grow flex flex-col items-center text-center p-6  bg-opacity-50 rounded-lg shadow-lg" style={{ fontFamily: "'La Belle Aurore', sans-serif" }}>
         <h1 className="text-4xl font-bold text-white mb-6">
           Contacto
         </h1>
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
           <SocialLinks />
         </div>
       </main>
-      <Footer />
+
     </div>
   );
 };

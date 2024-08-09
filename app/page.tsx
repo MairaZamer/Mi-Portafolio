@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-b">
-        <div className="flex flex-col md:flex-row items-center text-center md:text-left container mx-auto p-4 flex-grow bg-opacity-50 rounded-lg shadow-lg justify-between bg-black bg-opacity-50">
+      <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-b">
+        <div className="flex flex-col md:flex-row items-center text-center md:text-left container mx-auto p-4 flex-grow bg-opacity-50 rounded-lg shadow-lg justify-between">
           <div className="md:mr-10 mb-8 md:mb-0">
             <h1 className="text-6xl font-bold text-white mb-4">
               Hola,
