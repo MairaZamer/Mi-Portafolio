@@ -19,10 +19,10 @@ const Technology: React.FC = () => {
     return (
         <div>
             <Navbar />
-            <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-b" style={{ fontFamily: "'La Belle Aurore'" }}>
+            <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-b">
                 <div className="container mx-auto p-6 bg-black bg-opacity-50 rounded-lg shadow-lg">
                     <br />
-                    <h2 className="text-3xl font-bold text-white dark:text-white mb-4">
+                    <h2 className="text-3xl font-bold text-white mb-4">
                         Tecnologías
                     </h2>
                     <br />
@@ -34,7 +34,7 @@ const Technology: React.FC = () => {
                                     alt={`${tool.name} logo`} 
                                     className="w-16 h-16 mb-2 rounded-lg" 
                                 />
-                                <span className="text-lg text-white dark:text-gray-300">{tool.name}</span>
+                                <span className="text-lg text-white">{tool.name}</span>
                             </div>
                         ))}
                     </div>
