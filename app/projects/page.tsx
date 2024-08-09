@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
     <div className="flex flex-col min-h-screen bg-purple-950 bg-cover bg-center" style={{ backgroundImage: "url('/fondo.jpg')" }}>
       <Navbar />
       <main className="container mx-auto p-4 flex-grow">
-        <h1 className="text-4xl font-bold mb-6 text-center text-white" style={{ fontFamily: "'La Belle Aurore', cursive" }}>Proyectos</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center text-white" style={{ fontFamily: "'La Belle Aurore'" }}>Proyectos</h1>
         <div className="flex flex-wrap justify-center">
           {projects.map((project, index) => (
             <div

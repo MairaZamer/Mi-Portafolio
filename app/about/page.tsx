@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <div>
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-b">
-        <div className="container mx-auto p-6 bg-black bg-opacity-50 rounded-lg shadow-lg" style={{ fontFamily: "'La Belle Aurore', cursive" }}>
+        <div className="container mx-auto p-6 bg-black bg-opacity-50 rounded-lg shadow-lg" style={{ fontFamily: "'La Belle Aurore'" }}>
           <h1 className="text-4xl font-bold text-white dark:text-white mb-4">
             Sobre Mí
           </h1>

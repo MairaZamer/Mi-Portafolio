@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks';
 const Contact: React.FC = () => {
   return (
     <div>
-      <main style={{ fontFamily: "'La Belle Aurore', cursive" }}>
+      <main style={{ fontFamily: "'La Belle Aurore'" }}>
         <br/>
         <br/>
         <div>
