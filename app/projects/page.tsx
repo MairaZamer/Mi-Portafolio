@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
               )}
               <div className="absolute inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'La Belle Aurore'" }}>{project.title}</h3>
-                <p className="text-lg mb-4" style={{ fontFamily: "'La Belle Aurore', cursive" }}>{project.description}</p>
+                <p className="text-lg mb-4" style={{ fontFamily: "'La Belle Aurore'" }}>{project.description}</p>
                 <div>
                   {project.ytLink ? (
                     <a href={project.ytLink} className="text-sky-200 block mt-4" target="_blank" rel="noopener noreferrer">Link de YouTube</a>
