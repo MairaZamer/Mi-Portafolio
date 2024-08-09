@@ -9,7 +9,8 @@
 }
 
 body {
-  @apply bg-white text-black min-h-screen flex flex-col;
+  @apply bg-purple-950 bg-no-repeat bg-center bg-cover text-black min-h-screen flex flex-col;
+  background-image: url('/fondo.jpg');
 }
 
 main {
@@ -30,3 +31,5 @@ footer {
     animation: zoom-in 0.5s forwards;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');

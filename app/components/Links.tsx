@@ -7,7 +7,7 @@ export function Links() {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-purple-dark p-4 text-white">
+    <nav className="bg-purple-dark bg-opacity-10 p-4 text-white">
       <div className="container mx-auto flex justify-between">
         <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
         <div className="text-lg font-bold">Maira Zamer</div>
@@ -19,10 +19,12 @@ export function Links() {
           <Link className={`link ${pathname === '/about' ? 'active' : ''}`} href="/about">
             Sobre Mí
           </Link>
+          <Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href="/technology">
+            Tecnologia
+          </Link>
           <Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href="/projects">
             Proyectos
           </Link>
-          
         </div>
       </div>
     </nav>

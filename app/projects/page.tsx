@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -8,63 +10,53 @@ const Projects: React.FC = () => {
       title: 'Pokemon',
       description: 'Proyecto Individual sobre Pokemons',
       repoGit: 'https://github.com/MairaZamer/PIPokemons',
-      image: '/PI/HomePage2.png',
+      image: '/pokemon.jpg',
     },
     {
       title: 'Ebooks Palace',
       description: 'E-commerce de venta de libros digitales.',
-      link: 'https://www.youtube.com/watch?v=ZT9vL3sGkjg&t=4s&ab_channel=MairaZamer',
-      video: true,
+      ytLink: 'https://www.youtube.com/watch?v=ZT9vL3sGkjg&t=4s&ab_channel=MairaZamer',
+      image: '/ebooklila.jpeg',
       frontendRepo: 'https://github.com/MairaZamer/EbooksPalace-Front',
       backendRepo: 'https://github.com/MairaZamer/EbooksPalace-back',
     },
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-purple-950 bg-cover bg-center" style={{ backgroundImage: "url('/fondo.jpg')" }}>
       <Navbar />
-      <main className="container mx-auto p-4 flex-grow bg-white">
-        <h1 className="text-3xl font-bold mb-4 ">Proyectos</h1>
+      <main className="container mx-auto p-4 flex-grow">
+        <h1 className="text-4xl font-bold mb-6 text-center text-white" style={{ fontFamily: "'La Belle Aurore', cursive" }}>Proyectos</h1>
         <div className="flex flex-wrap justify-center">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
-              className="bg-white shadow-md rounded-lg p-4 m-4 border-2 border-purple-700 flex flex-col justify-between" 
-              style={{ width: '500px', height: '500px' }}
+            <div
+              key={index}
+              className="relative group bg-purple-light hover:bg-purple-dark text-white rounded-lg shadow-lg m-4 overflow-hidden"
+              style={{ width: '500px', height: '550px' }}
             >
-              <div>
-                <h3 className="text-lg font-bold text-purple-700">{project.title}</h3>
-                <p className="mt-2 text-black">{project.description}</p>
-                <br/>
-                {project.image && (
-                  <img 
-                    className="mt-4 w-full h-64 object-cover"
-                    src={project.image} 
-                    alt={`${project.title} screenshot`} 
-                  />
-                )}
-              </div>
-              <div>
-                {project.video ? (
-                  <>
-                    <iframe 
-                      className="mt-4 w-full h-64" 
-                      src="https://www.youtube.com/embed/ZT9vL3sGkjg"
-                      title="YouTube video player" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                      allowFullScreen>
-                    </iframe>
-                    <br/>
-                    <br/>
-                    <div className="mt-4">
-                      <a href={project.frontendRepo} className="text-purple-700 block" target="_blank" rel="noopener noreferrer">Repositorio Frontend</a>
-                      <a href={project.backendRepo} className="text-purple-700 block" target="_blank" rel="noopener noreferrer">Repositorio Backend</a>
-                    </div>
-                  </>
-                ) : (
-                  <a href={project.repoGit} className="text-purple-700 mt-4 block">Repositorio en Github</a>
-                )}
+              {project.image && (
+                <img
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src={project.image}
+                  alt={`${project.title} screenshot`}
+                />
+              )}
+              <div className="absolute inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'La Belle Aurore', cursive" }}>{project.title}</h3>
+                <p className="text-lg mb-4" style={{ fontFamily: "'La Belle Aurore', cursive" }}>{project.description}</p>
+                <div>
+                  {project.ytLink ? (
+                    <a href={project.ytLink} className="text-sky-200 block mt-4" target="_blank" rel="noopener noreferrer">Link de YouTube</a>
+                  ) : (
+                    <a href={project.repoGit} className="text-sky-200 block mt-4" target="_blank" rel="noopener noreferrer">Repositorio en Github</a>
+                  )}
+                  {project.frontendRepo && (
+                    <a href={project.frontendRepo} className="text-sky-200 block mt-4" target="_blank" rel="noopener noreferrer">Repositorio Frontend</a>
+                  )}
+                  {project.backendRepo && (
+                    <a href={project.backendRepo} className="text-sky-200 block mt-4" target="_blank" rel="noopener noreferrer">Repositorio Backend</a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
