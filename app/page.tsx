@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <div className="mt-4 zoom-in-effect">
               <a
-                href="/cv_maira_zamer.pdf"
+                href="/CV_maira_zamer.pdf"
                 download
                 className="inline-block bg-purple-950 text-white py-3 px-8 rounded-full shadow-lg hover:bg-purple-700 transition-colors"
               >

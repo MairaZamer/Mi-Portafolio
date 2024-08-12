@@ -7,10 +7,18 @@ import Footer from '../components/Footer';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Rick and Morty',
+      description: 'Proyecto sobre Rick and Morty',
+      repoGit: 'https://github.com/MairaZamer/integradorRickAndMorty',
+      image: '/rickandmorty.jpg',
+      pageName: 'Proyecto sobre Rick and Morty',
+    },
+    {
       title: 'Pokemon',
       description: 'Proyecto Individual sobre Pokemons',
       repoGit: 'https://github.com/MairaZamer/PIPokemons',
       image: '/pokemon.jpg',
+      pageName: 'Proyecto Individual Pokemon',
     },
     {
       title: 'Ebooks Palace',
@@ -19,6 +27,7 @@ const Projects: React.FC = () => {
       image: '/ebooklila.jpeg',
       frontendRepo: 'https://github.com/MairaZamer/EbooksPalace-Front',
       backendRepo: 'https://github.com/MairaZamer/EbooksPalace-back',
+      pageName: 'E-commerce libros digitales',
     },
   ];
 
@@ -41,6 +50,7 @@ const Projects: React.FC = () => {
                   alt={`${project.title} screenshot`}
                 />
               )}
+        
               <div className="absolute inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                 <p className="text-lg mb-4">{project.description}</p>
