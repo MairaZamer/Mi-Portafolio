@@ -6,6 +6,8 @@ const Technology: React.FC = () => {
         { name: "JavaScript", logo: "/logos/javascript.png" },
         { name: "TypeScript", logo: "/logos/typescript.png" },
         { name: "React", logo: "/logos/react.png" },
+        { name: "JSX", logo: "/logos/jsx.png" },
+        { name: "TSX", logo: "/logos/tsx.png" },        
         { name: "Redux", logo: "/logos/redux.png" },
         { name: "Next.js", logo: "/logos/next.png" },
         { name: "Node.js", logo: "/logos/node.png" },
@@ -14,7 +16,8 @@ const Technology: React.FC = () => {
         { name: "Tailwind CSS", logo: "/logos/tailwind.png" },
         { name: "Sequelize", logo: "/logos/sequelize.png" },
         { name: "PostgreSQL", logo: "/logos/postgres.png" },
-        { name: "Figma", logo: "/logos/figma.png" },
+        { name: "JSON", logo: "/logos/json.png" },
+        { name: "Figma", logo: "/logos/figma1.png" },
     ];
 
     return (
@@ -33,7 +36,7 @@ const Technology: React.FC = () => {
                                 <img 
                                     src={tool.logo} 
                                     alt={`${tool.name} logo`} 
-                                    className="w-16 h-16 mb-2 rounded-lg" 
+                                    className="w-16 h-17 mb-2 rounded-lg" 
                                 />
                                 <span className="text-lg text-white">{tool.name}</span>
                             </div>
