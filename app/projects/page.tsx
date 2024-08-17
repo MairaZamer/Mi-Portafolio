@@ -8,21 +8,21 @@ const Projects: React.FC = () => {
   const projects = [
     {
       title: 'Rick and Morty',
-      description: 'Proyecto sobre Rick and Morty',
+      description: 'Proyecto sobre Rick and Morty, que muestra personajes  utilizando la API de Rick and Morty. Desarrollado con React, Redux, Nodejs.',
       repoGit: 'https://github.com/MairaZamer/integradorRickAndMorty',
       image: '/rickandmorty.jpg',
       pageName: 'Proyecto sobre Rick and Morty',
     },
     {
       title: 'Pokemon',
-      description: 'Proyecto Individual sobre Pokemons',
+      description: 'Aplicación que permite buscar, filtrar y ver detalles de Pokémons. Incluye la integración de API y gestión de estado con Redux.',
       repoGit: 'https://github.com/MairaZamer/PIPokemons',
       image: '/pokemon.jpg',
       pageName: 'Proyecto Individual Pokemon',
     },
     {
       title: 'Ebooks Palace',
-      description: 'E-commerce de venta de libros digitales.',
+      description: 'E-commerce de venta de libros digitales, con carrito de compras, administración de usuarios y pasarela de pago integrada.',
       ytLink: 'https://www.youtube.com/watch?v=ZT9vL3sGkjg&t=4s&ab_channel=MairaZamer',
       image: '/ebooklila.jpeg',
       frontendRepo: 'https://github.com/MairaZamer/EbooksPalace-Front',
