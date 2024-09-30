@@ -10,7 +10,7 @@
 
 body {
   @apply bg-purple-950 bg-no-repeat bg-center bg-cover text-black min-h-screen flex flex-col;
-  background-image: url('/fondo.jpg');
+
   font-family: 'La Belle Aurore', sans-serif; /* Aplica la fuente globalmente */
 }
 

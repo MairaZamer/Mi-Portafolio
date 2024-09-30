@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
   const projects = [
     {
       title: 'Rick and Morty',
-      description: 'Proyecto sobre Rick and Morty, que muestra personajes  utilizando la API de Rick and Morty. Desarrollado con React, Redux, Nodejs.',
+      description: 'Proyecto sobre Rick and Morty, que muestra personajes utilizando la API de Rick and Morty. Desarrollado con React, Redux, Nodejs.',
       repoGit: 'https://github.com/MairaZamer/integradorRickAndMorty',
       image: '/rickandmorty.jpg',
       pageName: 'Proyecto sobre Rick and Morty',
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-purple-950 bg-cover bg-center" style={{ backgroundImage: "url('/fondo.jpg')" }}>
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-purple-900 to-black">
       <Navbar />
       <main className="container mx-auto p-4 flex-grow">
         <h1 className="text-4xl font-bold mb-6 text-center text-white">Proyectos</h1>
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
                   alt={`${project.title} screenshot`}
                 />
               )}
-        
+
               <div className="absolute inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                 <p className="text-lg mb-4">{project.description}</p>

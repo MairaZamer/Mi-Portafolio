@@ -21,22 +21,23 @@ const Technology: React.FC = () => {
     ];
 
     return (
-        <div>
+        <div className="min-h-screen bg-gradient-to-b from-purple-900 to-black">
             <Navbar />
-            <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-gradient-to-b">
-                <div className="container mx-auto p-6 bg-black bg-opacity-50 rounded-lg shadow-lg">
-                    <br />
-                    <h2 className="text-3xl font-bold text-white mb-4">
+            <main className="flex flex-col items-center justify-center p-6">
+                <div className="container mx-auto p-6 bg-black bg-opacity-60 rounded-lg shadow-lg">
+                    <h2 className="text-4xl font-bold text-white text-center mb-8">
                         Tecnologías
                     </h2>
-                    <br />
-                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         {tools.map((tool) => (
-                            <div key={tool.name} className="flex flex-col items-center">
+                            <div 
+                                key={tool.name} 
+                                className="flex flex-col items-center transform transition-transform duration-300 hover:scale-110"
+                            >
                                 <img 
                                     src={tool.logo} 
                                     alt={`${tool.name} logo`} 
-                                    className="w-16 h-17 mb-2 rounded-lg" 
+                                    className="w-20 h-20 mb-3 rounded-lg shadow-md" 
                                 />
                                 <span className="text-lg text-white">{tool.name}</span>
                             </div>
