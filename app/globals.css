@@ -12,15 +12,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #03010B;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #03010B;
-    --foreground: #ededed;
-  }
+  --background: #03010B; /* Color de fondo para ambos modos */
+  --foreground: #ededed; /* Color de texto para ambos modos */
 }
 
 body {

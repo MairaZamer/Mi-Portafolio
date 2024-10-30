@@ -13,21 +13,17 @@ const config: Config = {
         amatic: ['Amatic SC', 'cursive'],
         archivo: ['Archivo', 'sans-serif'],
         ebGaramond: ['EB Garamond', 'serif'],
-        // eduDots: ['Edu AU VIC WA NT Dots', 'cursive'],
-        // exo: ['Exo 2', 'sans-serif'],
         inconsolata: ['Inconsolata', 'monospace'],
-        // indie: ['Indie Flower', 'cursive'],
-        // kanit: ['Kanit', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
-        // sixtyfour: ['Sixtyfour Convergence', 'sans-serif'],
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)", // Color de fondo
+        foreground: "var(--foreground)", // Color de texto
         customOrange: '#6026f5',
       },
     },
   },
   plugins: [],
 };
+
 export default config;
