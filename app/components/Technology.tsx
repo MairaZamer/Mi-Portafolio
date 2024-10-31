@@ -24,7 +24,7 @@ const Technology: React.FC = () => {
                         {tools.map((tool) => (
                             <div
                                 key={tool.name}
-                                className="flex flex-col items-center transform transition-transform duration-300 hover:scale-110"
+                                className="font-ebGaramond flex flex-col items-center transform transition-transform duration-300 hover:scale-110"
                             >
                                 {Array.isArray(tool.logos) ? (
                                     <div className="flex space-x-2">

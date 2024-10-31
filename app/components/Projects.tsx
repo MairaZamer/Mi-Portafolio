@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative bg-purple-light text-white rounded-lg shadow-lg m-4 overflow-hidden"
+              className="font-ebGaramond relative bg-purple-light text-white rounded-lg shadow-lg m-4 overflow-hidden"
               style={{ width: '100%', maxWidth: '350px', height: '450px' }}
             >
               {project.image && (
@@ -50,21 +50,21 @@ const Projects: React.FC = () => {
                 <p className="text-lg mb-4">{project.description}</p>
                 <div>
                   {project.ytLink ? (
-                    <a href={project.ytLink} className="text-white block mt-4" target="_blank" rel="noopener noreferrer">
+                    <a href={project.ytLink} className="font-ebGaramond text-white block mt-4" target="_blank" rel="noopener noreferrer">
                       Link de YouTube
                     </a>
                   ) : (
-                    <a href={project.repoGit} className="text-white  block mt-4" target="_blank" rel="noopener noreferrer">
+                    <a href={project.repoGit} className="font-ebGaramond text-white  block mt-4" target="_blank" rel="noopener noreferrer">
                       Repositorio en Github
                     </a>
                   )}
                   {project.frontendRepo && (
-                    <a href={project.frontendRepo} className="text-white  block mt-4" target="_blank" rel="noopener noreferrer">
+                    <a href={project.frontendRepo} className="font-ebGaramond text-white  block mt-4" target="_blank" rel="noopener noreferrer">
                       Repositorio Frontend
                     </a>
                   )}
                   {project.backendRepo && (
-                    <a href={project.backendRepo} className="text-white  block mt-4" target="_blank" rel="noopener noreferrer">
+                    <a href={project.backendRepo} className="font-ebGaramond text-white  block mt-4" target="_blank" rel="noopener noreferrer">
                       Repositorio Backend
                     </a>
                   )}

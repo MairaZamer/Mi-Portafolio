@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
             <hr className="border-purple-800 mx-auto" />
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                    <span className="text-sm text-white text-center sm:text-left">
+                    <span className="font-ebGaramond text-sm text-white text-center sm:text-left">
                         © 2024 <a href="#" className="hover:underline">Maira Zamer</a>. Todos los derechos reservados.
                     </span>
                     <div className="flex justify-center sm:justify-start mt-4 sm:mt-0">
