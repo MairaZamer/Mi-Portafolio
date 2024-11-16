@@ -4,18 +4,11 @@ import React from 'react';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'Rick and Morty',
-      description: 'Proyecto sobre Rick and Morty, que muestra personajes utilizando la API de Rick and Morty. Desarrollado con React, Redux, Nodejs.',
-      repoGit: 'https://github.com/MairaZamer/integradorRickAndMorty',
-      image: '/fotos/rickandmorty.jpg',
-      pageName: 'Proyecto sobre Rick and Morty',
-    },
-    {
-      title: 'Pokemon',
-      description: 'Aplicación que permite buscar, filtrar y ver detalles de Pokémons. Incluye la integración de API y gestión de estado con Redux.',
-      repoGit: 'https://github.com/MairaZamer/PIPokemons',
-      image: '/fotos/pokemon.jpg',
-      pageName: 'Proyecto Individual Pokemon',
+      title: 'Contador de dias',
+      description: 'Calculador de dias y horas, realizado con next y tailwind CSS',
+      repoGit: 'https://github.com/MairaZamer/ContadorDeDias',
+      image: '/fotos/Contadordedias.jpeg',
+      pageName: 'Contador de dias y horas',
     },
     {
       title: 'Ebooks Palace',
@@ -25,6 +18,20 @@ const Projects: React.FC = () => {
       frontendRepo: 'https://github.com/MairaZamer/EbooksPalace-Front',
       backendRepo: 'https://github.com/MairaZamer/EbooksPalace-back',
       pageName: 'E-commerce libros digitales',
+    },
+    {
+      title: 'Pokemon',
+      description: 'Aplicación que permite buscar, filtrar y ver detalles de Pokémons. Incluye la integración de API y gestión de estado con Redux.',
+      repoGit: 'https://github.com/MairaZamer/PIPokemons',
+      image: '/fotos/pokemon.jpg',
+      pageName: 'Proyecto Individual Pokemon',
+    },
+    {
+      title: 'Rick and Morty',
+      description: 'Proyecto sobre Rick and Morty, que muestra personajes utilizando la API de Rick and Morty. Desarrollado con React, Redux, Nodejs.',
+      repoGit: 'https://github.com/MairaZamer/integradorRickAndMorty',
+      image: '/fotos/rickandmorty.jpg',
+      pageName: 'Proyecto sobre Rick and Morty',
     },
   ];
 
